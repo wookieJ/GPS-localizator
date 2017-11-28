@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="84.0" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gpsApp.controller.ControlPaneController">
+   <children>
+      <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Separator prefWidth="200.0" />
+            <HBox alignment="CENTER" maxHeight="84.0" spacing="15.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" maxHeight="84.0">
+                     <children>
+                        <Label text="COM port:" />
+                        <ComboBox fx:id="comPortComboBox" prefWidth="150.0" />
+                        <Label text="Baud Rate:" />
+                        <ComboBox fx:id="baudRateComboBox" prefWidth="150.0" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" maxHeight="84.0" spacing="5.0">
+                     <children>
+                        <Button fx:id="connectButton" mnemonicParsing="false" prefWidth="56.0" text="Połącz" />
+                        <Button fx:id="disconnectButton" mnemonicParsing="false" text="Rozłącz" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="FIX:" />
+                        <ImageView fx:id="connectionStatusImageView" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </VBox>
+                  <ToggleButton fx:id="showPositionButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Pokaż na mapie" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

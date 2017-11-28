@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gpsApp.controller.ContentPaneController">
+   <children>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="satalitesLabel" text="" />
+            <Label fx:id="satalitesAmountLabel" text="" />
+            <TextArea fx:id="textArea" maxWidth="1.7976931348623157E308" prefHeight="501.0" />
+            <Label fx:id="statusLabel" maxHeight="17.0" maxWidth="1.7976931348623157E308" prefHeight="17.0" text="" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

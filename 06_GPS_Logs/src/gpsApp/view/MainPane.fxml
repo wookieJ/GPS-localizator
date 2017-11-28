@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gpsApp.controller.MainPaneController">
+
+	<center>
+		<fx:include fx:id="webViewPane" source="WebViewPane.fxml" />
+	</center>
+   <right>
+		<VBox alignment="BOTTOM_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+			<children>
+      		<fx:include fx:id="contentPane" source="ContentPane.fxml" />
+				<fx:include fx:id="controlPane" source="ControlPane.fxml" />
+			</children>
+		</VBox>
+   </right>
+
+</BorderPane>

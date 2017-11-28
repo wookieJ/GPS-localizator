@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gpsApp.controller.WebViewPaneController">
+   <children>
+      <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane>
+               <children>
+                  <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ToggleButton mnemonicParsing="false" text="ToggleButton" />
+                        <ToggleButton fx:id="roadButton" mnemonicParsing="false" prefWidth="60.0" text="Road" />
+                        <ToggleButton fx:id="satelliteButton" mnemonicParsing="false" prefWidth="60.0" text="Satellite" />
+                        <ToggleButton fx:id="hybridButton" mnemonicParsing="false" prefWidth="60.0" text="Hybrid" />
+                        <ToggleButton fx:id="terrainButton" mnemonicParsing="false" prefWidth="60.0" text="Terrain" />
+                     </children>
+                  </HBox>
+                  <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <TextField fx:id="searchTextField" promptText="Podaj współrzędne" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Button fx:id="searchButton" mnemonicParsing="false" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <WebView fx:id="webView" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
