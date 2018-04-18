@@ -1,2 +1,3 @@
-# GPSLocalizator
-Program napisany w języku JAVA FX służący do wizualizacji aktualnego położenia, na podstawie danych pochodzących z modułu GPS NEO-7M, podłączonego do komputera przez konwerter FTDI.
+# GPS-localizator
+
+Appliction, written in JAVA FX to visualize the current location, based on data from the GPS NEO-7M module, connected to the computer by the FTDI converter.
